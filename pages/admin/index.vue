@@ -3,11 +3,9 @@
 		<page-header></page-header>
 		<section v-if="isLoggedIn">
 			Welcome Admin!
-			<router-link to="/blog/newpost">Post New Blog Post</router-link>
 		</section>
-		<div class="blog-section" v-if="isLoggedIn">
+		<div v-if="isLoggedIn">
 			<div>Latest Messages</div>
-			<div>Blog Posts</div>
 		</div>
 		<section v-else>You do not have the permissions to view this page.</section>
 	</div>
